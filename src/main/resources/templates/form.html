@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>check</title>
+</head>
+<body>
+
+	<h2>Check Form</h2>
+	<form action="#" th:action="@{/check}" th:object="${pwd}" method="post">
+		<input type="password" th:field="*{password}" /> <input type="submit"
+			value="送出" />
+	</form>
+</body>
+</html>

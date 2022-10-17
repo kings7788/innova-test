@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>顯示</title>
+</head>
+<body>
+	<h1>顯示資料</h1>
+	<p th:text="'Password：'+ ${pwd.password}"></p>
+	<h1>驗證結果</h1>
+	<p th:if="${res}" >Result：通過</p>
+	<p th:if="${not res}" >Result：不通過</p>
+	<p></p>
+</body>
+</html>
